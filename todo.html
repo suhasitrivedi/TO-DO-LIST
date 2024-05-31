@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1 style="font-style: italic;">To do list</h1>
+
+        <form id="newwork">
+            <input type="text" name="newtask" id="newtask" placeholder="my today plans!" />
+            <input type="submit" id="submit" value="add task" />
+        </form>
+
+    </header>
+
+    <main>
+        <section class="tlist">
+            <h2>Tasks</h2>
+            <div id="tasks">
+                <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div>
+            </div>
+
+        </section>
+    </main>
+ <script src="main.js" ></script>
+</body>
+</html>
