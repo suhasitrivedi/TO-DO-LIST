@@ -6,9 +6,9 @@ window.addEventListener('load', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const task = input.value.trim(); // Trim any leading/trailing whitespace
+        const task = input.value.trim(); 
 
-        if (task !== "") { // Make sure the task is not empty
+        if (task !== "") { 
             const task_el = document.createElement('div');
             task_el.classList.add('task');
 
@@ -43,7 +43,7 @@ window.addEventListener('load', () => {
 
             list_el.appendChild(task_el);
 
-            input.value = ''; // Clear the input field
+            input.value = ''; 
 
             task_edit_el.addEventListener('click', (e) => {
                 if (task_edit_el.innerText.toLowerCase() == "edit") {
